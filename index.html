@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Stories</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://use.typekit.net/xty7mro.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+  <div class="container">
+    <div class="top-section">
+      <h1>Photo Stories – Flow</h1>
+      <p>
+        Photo Stories is a concept feature for Facebook. It is a new feed which
+        replaces the news feed and converts status updates, check-ins, and photo
+        uploads into beautiful stories. This is to bring travellers, photographers and people
+        who love Instagram to Facebook.
+      </p>
+
+      <div class="featured">
+        <img src="media/feature-left.png" alt="" class="featured__image  featured__image--left">
+        <img src="media/feature-right.png" alt="" class="featured__image  featured__image--right">
+        <video class="featured__video" width="300" autoplay="autoplay" loop>
+          <source src="media/proto.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <!-- <div class="description">
+      <p>
+        Photo Stories are created automatically and they don't require any user input.
+        It grabs a series of posts made by a user including photo uploads,
+        check-ins, status updates and creates a story out of them in that order.
+      </p>
+      <p>
+        A summary of initial location used in the check-in is pulled from
+        Wikipedia and displayed at the top of story. Apart from that, the photos
+        are also arranged smartly. The photos with the most likes take up the whole
+        row while others are divided into two/three columns.
+      </p>
+    </div>
+
+    <div class="separator"></div> -->
+
+    <div class="flow">
+      <div class="step">
+        <div class="flow__text">
+          <h4>Step 1</h4>
+          <h2>Introduction</h2>
+
+          <p>
+            For introduction, a tooltip is shown to the users who are currently
+            on the news feed following these rules:
+          </p>
+          <ol>
+            <li>
+              The tooltip is shown with an overlay over the content. Tapping on
+              either the tooltip or the overlay dismisses the tooltip.
+            </li>
+            <li>
+              Long pressing the news feed icon brings up a menu (slide in from
+              bottom), replacing the icon with a cross button.
+            </li>
+            <li>
+              Tapping the "Photo Stories" menu item takes the user to the "Photo
+              Stories" feed.
+            </li>
+          </ol>
+
+          <p>The same process is repeated if the user wants to switch back to the news feed.</p>
+        </div>
+        <div class="flow__image">
+          <video width="320" autoplay="autoplay" loop>
+            <source src="media/intro.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="step  step--reverse">
+        <div class="flow__text">
+          <h4>Step 2</h4>
+          <h2>Photo Story Feed</h2>
+
+          <p>
+            Photo Stories feed shows a concise version of actual photo stories.
+            It consists of a cover image, a horizontally scrollable section of
+            all the photos/videos and an action bar.
+          </p>
+
+          <p>
+            The name of the person is shown on top of the cover image, along
+            with the time of the last update and the first status/check-in message
+            of the story.
+          </p>
+
+          <p>
+            Clicking on the cover photo takes the user to the photo story detail.
+            Clicking on the photos below will open the default fullscreen photo view.
+          </p>
+        </div>
+        <div class="flow__image">
+          <video width="320" autoplay="autoplay" loop>
+            <source src="media/feed.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="step">
+        <div class="flow__text">
+          <h4>Step 3</h4>
+          <h2>Photo Story Detail</h2>
+
+          <p>
+            Everything except the cover image fades away when transitioning from
+            feed to the detailed story. The cover image then repositions to its
+            new position in the story and the remaining information fades in
+            sequentially.
+          </p>
+          <p>
+            A summary of initial location used in the check-in is pulled from
+            Wikipedia and displayed at the top of story. Apart from that, the photos
+            are also arranged smartly. The photos with the most likes take up the whole
+            row while others are divided into two/three columns.
+          </p>
+        </div>
+        <div class="flow__image">
+          <video width="320" autoplay="autoplay" loop>
+            <source src="media/details.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <p class="copy">~ fin ~</p>
+  </div>
+</body>
+</html>
